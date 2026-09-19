@@ -1,0 +1,32 @@
+Architectures: all amd64
+Codename: trixie
+Components: main
+Date: Sat, 19 Sep 2026 18:45:28 +0000
+Description: ViperOS packages for Debian 13
+Label: ViperOS
+Origin: ViperOS
+Suite: trixie
+MD5Sum:
+ cb72f1a10b817c7ad9e082c180a39801              186 Release
+ 2e742ed8ef8be4965bfb101e73962b77             7367 main/binary-all/Packages
+ 1f2ab637b12bd66f754ce704a8699ab5             3318 main/binary-all/Packages.gz
+ 2e742ed8ef8be4965bfb101e73962b77             7367 main/binary-amd64/Packages
+ 1f2ab637b12bd66f754ce704a8699ab5             3318 main/binary-amd64/Packages.gz
+SHA1:
+ 44685a62cb7e65dc2ef868a1775fbf9d237d7a05              186 Release
+ 8ee4203e35128503cd5e315de4e27ae5bb993dde             7367 main/binary-all/Packages
+ 20342d17420d90c3591bd9dc3789f538b47f40c9             3318 main/binary-all/Packages.gz
+ 8ee4203e35128503cd5e315de4e27ae5bb993dde             7367 main/binary-amd64/Packages
+ 20342d17420d90c3591bd9dc3789f538b47f40c9             3318 main/binary-amd64/Packages.gz
+SHA256:
+ ff198f7253393ea41c317f640da8ccd253f2edefac30fe2e42087bb56ac95ce3              186 Release
+ 39ef27e7886660a8059f57c8cc7d16b59f665d6ac91e01ecc12b7bbc70f3b3d9             7367 main/binary-all/Packages
+ fe7e8410a07b3b5c5cac1f8dd8fc2cfa61203792cd4b468e50d11349f40638c6             3318 main/binary-all/Packages.gz
+ 39ef27e7886660a8059f57c8cc7d16b59f665d6ac91e01ecc12b7bbc70f3b3d9             7367 main/binary-amd64/Packages
+ fe7e8410a07b3b5c5cac1f8dd8fc2cfa61203792cd4b468e50d11349f40638c6             3318 main/binary-amd64/Packages.gz
+SHA512:
+ 85f24d073c6cc2ccb11f52316416b6f1cfcbf042ea5019a125e5f2a745c2e042874846a56119b2cd18cabdba9806874f09047fcf0ebde8fa5896d1f713b16521              186 Release
+ 59537645eede59ba6ffd19b23b718abbe8235b91f3344a134c802c0a29d2cb817d250b1a9dfe41f7c142fae49fb3dfa207820b333442f1c5e5b8b256e33a1461             7367 main/binary-all/Packages
+ 247be1f8beeca6816a53e104e12f65ed7b3a5c16441e57bf88f2d5b7799815703598feeeca006aa5725b55b19d695d7724bf7b291e15ea55f9b7efa5ba12b8e7             3318 main/binary-all/Packages.gz
+ 59537645eede59ba6ffd19b23b718abbe8235b91f3344a134c802c0a29d2cb817d250b1a9dfe41f7c142fae49fb3dfa207820b333442f1c5e5b8b256e33a1461             7367 main/binary-amd64/Packages
+ 247be1f8beeca6816a53e104e12f65ed7b3a5c16441e57bf88f2d5b7799815703598feeeca006aa5725b55b19d695d7724bf7b291e15ea55f9b7efa5ba12b8e7             3318 main/binary-amd64/Packages.gz

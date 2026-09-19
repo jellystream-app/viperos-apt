@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ViperOS Paketquelle</title>
+<style>
+:root{color-scheme:dark}
+body{background:#12151f;color:#e7eef9;font:16px/1.6 system-ui,sans-serif;
+max-width:46rem;margin:0 auto;padding:2rem 1rem}
+h1{color:#8fb0e8;font-size:1.6rem}
+code,pre{background:#1b1f2e;border:1px solid #22344f;border-radius:6px}
+code{padding:.1rem .35rem}
+pre{padding:.9rem;overflow-x:auto}
+a{color:#8fb0e8}
+</style></head><body>
+<h1>ViperOS Paketquelle</h1>
+<p>Diese Adresse ist ein APT-Repository. Auf einem installierten
+ViperOS ist es bereits eingetragen; Aktualisierungen kommen mit
+<code>apt upgrade</code>.</p>
+<h2>Auf einem Debian 13 einrichten</h2>
+<pre>sudo curl -fsSLo /usr/share/keyrings/viperos-archive-keyring.gpg \
+  https://jellystream-app.github.io/viperos-apt/viperos-archive-keyring.gpg
+
+sudo tee /etc/apt/sources.list.d/viperos.sources &gt;/dev/null &lt;&lt;EOF
+Types: deb
+URIs: https://jellystream-app.github.io/viperos-apt
+Suites: trixie
+Components: main
+Architectures: amd64
+Signed-By: /usr/share/keyrings/viperos-archive-keyring.gpg
+EOF
+
+sudo apt update &amp;&amp; sudo apt install viperos-desktop</pre>
+<h2>Inhalt</h2><ul>
+<li><code>viperos-desktop-theme</code> 2.0.0 &mdash; ViperOS Erscheinungsbild fuer GNOME Shell</li>
+<li><code>viperos-desktop</code> 2.0.1 &mdash; ViperOS Desktop (Metapaket)</li>
+<li><code>viperos-hub</code> 2.0.1 &mdash; ViperOS Systemzentrale</li>
+<li><code>viperos-panel-extension</code> 2.0.0 &mdash; ViperOS GNOME-Shell-Erweiterung fuer die Arbeitsflaechen-Regionen</li>
+<li><code>viperos-settings</code> 2.0.0 &mdash; Systemweite Vorgaben und Paketquelle von ViperOS</li>
+</ul>
+<p><small>Erzeugt aus Commit <code>d4f5eef</code>.</small></p>
+</body></html>

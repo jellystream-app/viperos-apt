@@ -1,0 +1,151 @@
+Package: viperos-desktop-theme
+Architecture: all
+Version: 2.0.0
+Priority: optional
+Section: x11
+Maintainer: ViperOS Project <viperos@radionet.app>
+Installed-Size: 2291
+Recommends: gnome-shell-extension-user-theme, gnome-themes-extra, papirus-icon-theme, fonts-inter, fonts-jetbrains-mono
+Filename: pool/main/v/viperos-desktop-theme/viperos-desktop-theme_2.0.0_all.deb
+Size: 1926472
+MD5sum: ebd662460a0f0675666ce42ffea214e1
+SHA1: aa6ce718ec02842507a16d2e137561d37881cde3
+SHA256: 8002e56986016e4047663b0c1b6f1732db8efd1af3c78888f233dff9041117b8
+SHA512: 0ed8eac807b4e516595e4e469217bc484f07e98d00c22a6ec7e1d0efa67452002b0a6edd9970ab1ef08fa036ae4c69c0dde586a11366f61d03b0b0cc8aadc2ec
+Homepage: https://radionet.app/
+Description: ViperOS Erscheinungsbild fuer GNOME Shell
+ Das dunkle Erscheinungsbild von ViperOS: Shell-Theme, Hintergrundbilder und
+ die Farbdefinitionen, mit denen GTK3- und GTK4-Anwendungen zum Desktop
+ passen.
+ .
+ Das Shell-Theme entsteht beim Paketbau aus GNOMEs Standard-Stylesheet und den
+ ViperOS-Regeln. Das ist notwendig, weil ein Shell-Theme GNOMEs Stylesheet
+ vollstaendig ersetzt statt es zu ergaenzen: ein Theme, das nur die eigenen
+ Regeln enthaelt, laesst rund 165 KB Standardregeln weg, und die Oberflaeche
+ faellt auf die Voreinstellungen der Zeichenbibliothek zurueck.
+ .
+ Sichtbar wird das Theme ueber die Erweiterung user-theme, die es in
+ gnome-tweaks auswaehlbar macht; die Systemvorgaben im Paket viperos-settings
+ aktivieren es automatisch.
+
+Package: viperos-desktop
+Architecture: all
+Version: 2.0.1
+Priority: optional
+Section: metapackages
+Maintainer: ViperOS Project <viperos@radionet.app>
+Installed-Size: 8
+Depends: viperos-settings (>= 2.0.0), viperos-desktop-theme, viperos-panel-extension, viperos-hub
+Recommends: gnome-shell-extension-dashtodock, gnome-shell-extension-appindicator, gnome-shell-extension-blur-my-shell, gnome-shell-extension-desktop-icons-ng, gnome-shell-extension-user-theme
+Filename: pool/main/v/viperos-desktop/viperos-desktop_2.0.1_all.deb
+Size: 2504
+MD5sum: 5c29bcaef073452d2fb7f634cad82725
+SHA1: 9d5d10cd241719a8d6acd4343fe987fa2a8802f2
+SHA256: 27e3f53d429d16018009d3babfa9f5d2d33c0d54a424a58d8fb5fca2382c9066
+SHA512: b56a4b56c7309c6ed195846724d777aecb16b1e707797e9d3f61b00a366a9eb8286e195111e4ac816d2dbfcd95cfcbedc7bed8c455ea8710e47d74c0beed06d8
+Homepage: https://radionet.app/
+Description: ViperOS Desktop (Metapaket)
+ Zieht die ViperOS-Bestandteile zusammen: Systemvorgaben samt Paketquelle,
+ Erscheinungsbild, Shell-Erweiterung und den ViperOS Hub.
+ .
+ Die Paketliste des ISO-Baus nennt nur dieses Paket; alles andere folgt als
+ Abhaengigkeit. Wer ViperOS nachtraeglich auf einem Debian-System einrichten
+ will, installiert ebenfalls nur dieses Paket.
+ .
+ Die Erweiterungen in Recommends werden von den Systemvorgaben aktiviert.
+ Fehlt eine, startet die Sitzung trotzdem - GNOME ueberspringt Erweiterungen,
+ die es nicht findet. Deshalb stehen sie nicht in Depends.
+
+Package: viperos-hub
+Architecture: all
+Version: 2.0.1
+Priority: optional
+Section: admin
+Maintainer: ViperOS Project <viperos@radionet.app>
+Installed-Size: 45
+Depends: python3, python3-gi, gir1.2-gtk-3.0, pciutils, procps, pkexec
+Recommends: gnome-terminal, gnome-control-center, gnome-system-monitor, nautilus, gnome-disk-utility
+Filename: pool/main/v/viperos-hub/viperos-hub_2.0.1_all.deb
+Size: 12104
+MD5sum: ff5a1f6248a42c56a02b681164b68ead
+SHA1: eebf0d2d25486afbdbec41f0ba1c58516d9963e1
+SHA256: f8b61b88a90dcadee3e7778455a65650abec75cea6e29b2674ff25febc377c34
+SHA512: a4d4ca706750010ac439b174b53e6570abf0c81fd909b09ac5e2e77e22693a266641edd89216f2d0b6881a5893352b064d99fdd675fd80e4925fd02cb3cd794a
+Homepage: https://radionet.app/
+Description: ViperOS Systemzentrale
+ Der ViperOS Hub zeigt den Zustand des laufenden Systems und buendelt die
+ Aufgaben, die nach dem ersten Start anfallen.
+ .
+ Enthalten sind eine Uebersicht mit Live-Kacheln fuer Arbeitsspeicher,
+ Datentraeger und Netzwerk, eine Geraeteliste, Verknuepfungen zu den
+ Systemwerkzeugen sowie die Systemaktualisierung. Laeuft ViperOS vom
+ Live-Medium, bietet der Hub zusaetzlich die Installation auf die Festplatte
+ an.
+ .
+ Die Werkzeuge in Recommends werden nur aufgerufen, wenn der Nutzer den
+ jeweiligen Knopf betaetigt; fehlt eines, sagt der Hub das statt still zu
+ scheitern. Deshalb stehen sie nicht in Depends.
+
+Package: viperos-panel-extension
+Architecture: all
+Version: 2.0.0
+Priority: optional
+Section: gnome
+Maintainer: ViperOS Project <viperos@radionet.app>
+Installed-Size: 15
+Depends: gnome-shell (>= 48~), gnome-shell (<< 49~)
+Recommends: gnome-shell-extension-desktop-icons-ng
+Filename: pool/main/v/viperos-panel-extension/viperos-panel-extension_2.0.0_all.deb
+Size: 3588
+MD5sum: d6438289cfa9c9ca1d321489cd78a7ab
+SHA1: 053b22b00d945ac01ce1142fdba253b22d86125c
+SHA256: ffcfaf88ffe5f92ed7f2a6f8e38699204b336cbd8bd62e9949d98846796302e1
+SHA512: 723ba6b86df54f3bad25470e2969f09335a90fbd088ef860b8ef46872da37a24c0fef8d3de25a329fe758e756e2f9a478edab5f978638886a355f5d4936c85fb
+Homepage: https://radionet.app/
+Description: ViperOS GNOME-Shell-Erweiterung fuer die Arbeitsflaechen-Regionen
+ Berechnet nach dem Laden der Shell die Arbeitsflaechen-Regionen neu, damit
+ Schreibtisch-Symbole unterhalb der oberen Leiste beginnen statt darunter zu
+ verschwinden.
+ .
+ Die Erweiterung aendert bewusst NICHTS am Aussehen der Leiste - kein
+ Floating, keine Inline-Stile. Das gesamte Erscheinungsbild steht im Paket
+ viperos-desktop-theme. Diese Trennung ist Absicht: als beides vermischt war,
+ ueberschrieben sich Inline-Stile und Theme-Regeln gegenseitig, und die
+ Rundungen der Leiste blieben unsichtbar.
+ .
+ Die Versionsgrenzen auf gnome-shell sind streng, weil metadata.json die
+ Shell-Version 48 deklariert. Laedt eine andere Shell die Erweiterung, wird
+ sie als inkompatibel abgewiesen - dann fehlt die Neuberechnung und die
+ Symbole verschwinden wieder hinter der Leiste.
+
+Package: viperos-settings
+Architecture: all
+Version: 2.0.0
+Priority: optional
+Section: admin
+Maintainer: ViperOS Project <viperos@radionet.app>
+Installed-Size: 63
+Depends: dconf-gsettings-backend, dconf-cli
+Recommends: viperos-desktop-theme, python3-pil
+Filename: pool/main/v/viperos-settings/viperos-settings_2.0.0_all.deb
+Size: 13120
+MD5sum: a1962b9292b56443d9737451d17e29d8
+SHA1: c613c44bd59b1678c0816b8b3974eacc427b1bd8
+SHA256: dba618beb3979acbd919d521fb100924d389749ed2156c6149539afe248bd9b2
+SHA512: 6887639320718069ae8ec025836c383e0be715083e0f6051a1f1a3344b33def52399933e70f9dc394db655ebc52b43e18d68f5bfa312f78df1e1ec8fc4e5c3dd
+Homepage: https://radionet.app/
+Description: Systemweite Vorgaben und Paketquelle von ViperOS
+ Legt fest, wie ViperOS beim ersten Start aussieht und verhaelt: dunkles
+ Erscheinungsbild, Fensterknoepfe links, aktive Erweiterungen, Tastenkuerzel,
+ Datenschutzvorgaben und die Gestaltung des Anmeldebildschirms.
+ .
+ Die Vorgaben liegen als dconf-Systemdatenbank in /etc/dconf/db/local.d und
+ gelten damit fuer jeden Benutzer - auch fuer den, den der Installer anlegt.
+ Bewusst ohne Sperre: aendert ein Nutzer etwas, liegt seine Fassung in der
+ eigenen Datenbank und hat Vorrang.
+ .
+ Dieses Paket traegt ausserdem die ViperOS-Paketquelle samt Signierschluessel
+ ein. Erst dadurch erreichen Aktualisierungen von Hub, Theme und Vorgaben ein
+ bereits installiertes System; vorher entstand alles davon nur beim ISO-Bau
+ und war nach der Installation eingefroren.
+
